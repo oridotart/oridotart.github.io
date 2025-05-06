@@ -1,20 +1,28 @@
-<!DOCTYPE html>  
-<html>  
-<head>  
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <link rel="stylesheet" href="style.css">  
-    <title>stieg.org</title>  
-    <script>  
-        // Inline script to bypass GitHub's restrictions  
-        window.onload = function() {  
-            if (Math.random() > 0.5) {  
-                document.getElementById('cover-image').style.filter = 'invert(1)';  
-                document.body.style.backgroundColor = 'black';  
-            }  
-        };  
-    </script>  
-</head>  
-<body>  
-    <img src="cover_image.png" alt="A white background with the text, stieg.org. owner: ori stieg" id="cover-image">  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>stieg.org</title>
+    <style>
+        #cover-image {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            if (Math.random() > 0.5) {
+                document.getElementById('cover-image').style.filter = 'invert(1)';
+                document.body.style.backgroundColor = 'black';
+            }
+        };
+    </script>
+</head>
+<body>
+    <img src="cover_image.png" alt="A white background with the text, stieg.org. owner: ori stieg" id="cover-image">
+</body>
+</html>
