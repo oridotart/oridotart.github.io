@@ -1,7 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const image = document.getElementById('cover-image');
-    if (Math.random() > 0.5) {
-        image.classList.add('inverted');
-        document.body.style.backgroundColor = 'black';
-    }
-});
+// random-invert.js (updated)  
+const image = document.getElementById('cover-image');  
+if (Math.random() > 0.5) {  
+  image.style.filter = 'invert(1)';  
+  document.body.style.backgroundColor = 'black';  
+}  
