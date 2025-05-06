@@ -6,11 +6,11 @@
     <title>stieg.org</title>
     <style>
         #cover-image {
-            animation: blink 1s infinite;
+            animation: rotate 3s linear infinite;
         }
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
     <script>
