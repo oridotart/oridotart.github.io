@@ -1,6 +1,15 @@
+body {  
+    margin: 0;  
+    display: flex;  
+    justify-content: center; /* Horizontal center */  
+    align-items: center;     /* Vertical center */  
+    min-height: 100vh;  
+}  
+
 #cover-image {  
-    width: 70%;  
-    max-width: 70vw; /* Limits monster screens */  
+    width: 70vw;            /* 70% of screen width */  
+    max-width: 700px;       /* Limits expansion on desktops */  
     height: auto;  
-    object-fit: contain;  
+    display: block;         /* Kills flex weirdness */  
+    margin: 0 auto;         /* Double-check centering */  
 }  
